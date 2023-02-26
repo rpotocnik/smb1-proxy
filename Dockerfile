@@ -6,7 +6,6 @@ RUN apk add --no-cache --update --upgrade \
     supervisor
 
 COPY ./supervisord.conf /etc/supervisord.conf
-COPY ./watcher.py /watcher.py
 
 # Docker Healthcheck
 COPY ./docker-healthcheck.py /docker-healthcheck.py

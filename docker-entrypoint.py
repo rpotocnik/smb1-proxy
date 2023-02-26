@@ -28,7 +28,7 @@ while True:
   remoteDomain = os.getenv('PROXY{}_REMOTE_DOMAIN'.format(i))
   remoteUsername = os.getenv('PROXY{}_REMOTE_USERNAME'.format(i))
   remotePassword = os.getenv('PROXY{}_REMOTE_PASSWORD'.format(i))
-  remoteMount = '/remote{}'.format(i)
+  remoteMount = '/share{}'.format(i)
 
   # SMB Mount
   print("Mounting '{share}' with user '{domain}\\{username}' at '{directory}'".format(
